@@ -1,0 +1,33 @@
+email = input("enter your email:") #g@g.in, ayushgupta406@gmail.com
+if len(email)>=6:
+    k,j,d=0,0,0
+    print("right email length")
+    if email[0].isalpha():
+        print("right email alphabet")
+        if ("@" in email) and (email.count("@")==1):
+            print("vaild @ function")
+            if (email[-4]==".") ^ (email[-3]=="."):
+                print("vaild . function")
+                for i in email:
+                    if i==i.isspace():
+                        k=1
+                    elif i.isalpha():
+                        if i==i.upper():
+                            j=1
+                        elif i.isdigit():
+                            contiune
+                        elif i=="_" or i=="." or i=="@":
+                            continue
+                        else:
+                            d=1
+                            
+                        if k==1 or j==1 or d==1:
+                            print("email problem")
+            else:
+                print("invaild . function")
+        else:
+            print("invaild @ function")
+    else:
+        print("invaild alphabet 2")
+else:
+    print("invaild length 1")
